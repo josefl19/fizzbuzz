@@ -12,7 +12,7 @@ const explorersInNode = explorers.filter((explorer) => explorer.mission == "node
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-//console.log(usernamesInNode)
+console.log(usernamesInNode)
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
