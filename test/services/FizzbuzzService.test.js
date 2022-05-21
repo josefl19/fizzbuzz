@@ -1,10 +1,10 @@
-const Reader = require('./../../lib/utils/Reader');
-const FizzbuzzService = require('./../../lib/services/FizzbuzzService');
+const Reader = require("./../../lib/utils/Reader");
+const FizzbuzzService = require("./../../lib/services/FizzbuzzService");
 
-const explorers = Reader.readJsonFile('./test/data/test_explorers.json');
+const explorers = Reader.readJsonFile("./test/data/test_explorers.json");
 
 describe("Testing the class FizzbuzzService", () => {
-    test('Simple validations', () => {
+    test("Simple validations", () => {
         const explorer1 = {name: "Explorer1", score: 1};
         const valExplorer1 = FizzbuzzService.applyValidationInExplorer(explorer1);
         expect(valExplorer1).toStrictEqual({"name": "Explorer1", "score": 1, "trick": 1});
@@ -23,7 +23,7 @@ describe("Testing the class FizzbuzzService", () => {
         expect(valExplorer15).toStrictEqual({"name": "Explorer15", "score": 15, "trick": "FIZZBUZZ"});
     });
 
-    test('Validation using file json', () => {
+    test("Validation using file json", () => {
         const explorersVal = explorers.map((exp) => {
             return FizzbuzzService.applyValidationInExplorer(exp);
         });
