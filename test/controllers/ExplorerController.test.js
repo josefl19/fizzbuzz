@@ -148,4 +148,14 @@ describe("Test class ExplorerController", () => {
         expect(amountExplorersNode).toBe(10);
         expect(amountExplorersJava).toBe(5);
     });
+
+    test("Testing applyValidationInNumber method in the controller", () => {
+        const test3 = ExplorerController.getValueOfNumber(3);
+        const test5 = ExplorerController.getValueOfNumber(5);
+        const test15 = ExplorerController.getValueOfNumber(15);
+
+        expect(test3).toBe("FIZZ");
+        expect(test5).toBe("BUZZ");
+        expect(test15).toBe("FIZZBUZZ");
+    });
 });

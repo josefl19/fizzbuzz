@@ -65,4 +65,14 @@ describe("Testing the class FizzbuzzService", () => {
             }
         ]);
     });
+
+    test("Validation with a number", () => {
+        const test3 = FizzbuzzService.applyValidationInNumber(3);
+        const test5 = FizzbuzzService.applyValidationInNumber(5);
+        const test15 = FizzbuzzService.applyValidationInNumber(15);
+
+        expect(test3).toBe("FIZZ");
+        expect(test5).toBe("BUZZ");
+        expect(test15).toBe("FIZZBUZZ");
+    });
 });
