@@ -39,7 +39,7 @@ describe("Testing the class FizzbuzzService", () => {
                     "reasonML",
                     "elm"
                 ],
-                "trick": FIZZBUZZ
+                "trick": 1
             },
             {
                 "name": "Woopa2",
