@@ -73,6 +73,6 @@ describe("Testing the class FizzbuzzService", () => {
 
         expect(test3).toBe("FIZZ");
         expect(test5).toBe("BUZZ");
-        expect(test15).toBe("FIZZBUZZ");
+        expect(test15).toBe("FIZZBUZZ"); 
     });
 });
