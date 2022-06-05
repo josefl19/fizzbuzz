@@ -3,7 +3,7 @@ name: Deploy Workflow Azure
 on: [push]
 
 env:
-  AZURE_WEBAPP_NAME: launchX   # set this to your application's name
+  AZURE_WEBAPP_NAME: launchx-nodejs   # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: '17.x'                # set this to the node version to use
 
